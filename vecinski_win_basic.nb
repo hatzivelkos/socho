@@ -1,0 +1,112 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      3049,        103]
+NotebookOptionsPosition[      2626,         84]
+NotebookOutlinePosition[      2970,         99]
+CellTagsIndexPosition[      2927,         96]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"alfa", "=", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", "2", ",", "2", ",", "0", ",", "0", ",", "0"}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"VeA", "=", 
+  RowBox[{
+   RowBox[{"alfa", "[", 
+    RowBox[{"[", "1", "]"}], "]"}], "+", 
+   RowBox[{"alfa", "[", 
+    RowBox[{"[", "4", "]"}], "]"}]}]}], "\[IndentingNewLine]", 
+ RowBox[{"VeB", "=", 
+  RowBox[{
+   RowBox[{"alfa", "[", 
+    RowBox[{"[", "3", "]"}], "]"}], "+", 
+   RowBox[{"alfa", "[", 
+    RowBox[{"[", "5", "]"}], "]"}]}]}], "\[IndentingNewLine]", 
+ RowBox[{"VeC", "=", 
+  RowBox[{
+   RowBox[{"alfa", "[", 
+    RowBox[{"[", "2", "]"}], "]"}], "+", 
+   RowBox[{"alfa", "[", 
+    RowBox[{"[", "6", "]"}], "]"}]}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Which", "[", 
+   RowBox[{
+    RowBox[{"And", "[", 
+     RowBox[{
+      RowBox[{"VeA", ">", "VeB"}], ",", 
+      RowBox[{"VeA", ">", "VeC"}]}], "]"}], ",", 
+    RowBox[{"Vecinski", "=", "1"}], ",", 
+    RowBox[{"And", "[", 
+     RowBox[{
+      RowBox[{"VeB", ">", "VeA"}], ",", 
+      RowBox[{"VeB", ">", "VeC"}]}], "]"}], ",", 
+    RowBox[{"Vecinski", "=", "2"}], ",", 
+    RowBox[{"And", "[", 
+     RowBox[{
+      RowBox[{"VeC", ">", "VeA"}], ",", 
+      RowBox[{"VeC", ">", "VeB"}]}], "]"}], ",", 
+    RowBox[{"Vecinski", "=", "3"}], ",", "True", ",", 
+    RowBox[{"Vecinski", "=", "0"}]}], "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Print", "[", "Vecinski", "]"}]}], "Input",
+ CellChangeTimes->{
+  3.6194248381807737`*^9, {3.619424903798527*^9, 3.6194249634589396`*^9}, {
+   3.6194250547081585`*^9, 3.619425076718417*^9}, {3.6194251109693766`*^9, 
+   3.619425111041381*^9}}],
+
+Cell[BoxData["1"], "Output",
+ CellChangeTimes->{3.619425082952774*^9, 3.619425115554639*^9}],
+
+Cell[BoxData["2"], "Output",
+ CellChangeTimes->{3.619425082952774*^9, 3.6194251155566387`*^9}],
+
+Cell[BoxData["2"], "Output",
+ CellChangeTimes->{3.619425082952774*^9, 3.619425115557639*^9}],
+
+Cell[BoxData["0"], "Print",
+ CellChangeTimes->{3.6194250829617743`*^9, 3.619425115559639*^9}]
+}, Open  ]]
+},
+WindowSize->{707, 761},
+WindowMargins->{{72, Automatic}, {38, Automatic}},
+FrontEndVersion->"8.0 for Microsoft Windows (64-bit) (November 7, 2010)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 1648, 47, 152, "Input"],
+Cell[2230, 71, 92, 1, 30, "Output"],
+Cell[2325, 74, 94, 1, 30, "Output"],
+Cell[2422, 77, 92, 1, 30, "Output"],
+Cell[2517, 80, 93, 1, 23, "Print"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

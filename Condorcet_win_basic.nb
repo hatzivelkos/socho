@@ -1,0 +1,142 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      3990,        133]
+NotebookOptionsPosition[      3563,        114]
+NotebookOutlinePosition[      3906,        129]
+CellTagsIndexPosition[      3863,        126]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"alfa", "=", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", "2", ",", "3", ",", "0", ",", "0", ",", "0"}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"ConAB", "=", 
+  RowBox[{
+   RowBox[{"alfa", "[", 
+    RowBox[{"[", "1", "]"}], "]"}], "+", 
+   RowBox[{"alfa", "[", 
+    RowBox[{"[", "2", "]"}], "]"}], "+", 
+   RowBox[{"alfa", "[", 
+    RowBox[{"[", "4", "]"}], "]"}], "-", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"alfa", "[", 
+      RowBox[{"[", "3", "]"}], "]"}], "+", 
+     RowBox[{"alfa", "[", 
+      RowBox[{"[", "5", "]"}], "]"}], "+", 
+     RowBox[{"alfa", "[", 
+      RowBox[{"[", "6", "]"}], "]"}]}], ")"}]}]}], "\[IndentingNewLine]", 
+ RowBox[{"ConAC", "=", 
+  RowBox[{
+   RowBox[{"alfa", "[", 
+    RowBox[{"[", "1", "]"}], "]"}], "+", 
+   RowBox[{"alfa", "[", 
+    RowBox[{"[", "4", "]"}], "]"}], "+", 
+   RowBox[{"alfa", "[", 
+    RowBox[{"[", "5", "]"}], "]"}], "-", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"alfa", "[", 
+      RowBox[{"[", "2", "]"}], "]"}], "+", 
+     RowBox[{"alfa", "[", 
+      RowBox[{"[", "3", "]"}], "]"}], "+", 
+     RowBox[{"alfa", "[", 
+      RowBox[{"[", "6", "]"}], "]"}]}], ")"}]}]}], "\[IndentingNewLine]", 
+ RowBox[{"ConBC", "=", 
+  RowBox[{
+   RowBox[{"alfa", "[", 
+    RowBox[{"[", "1", "]"}], "]"}], "+", 
+   RowBox[{"alfa", "[", 
+    RowBox[{"[", "3", "]"}], "]"}], "+", 
+   RowBox[{"alfa", "[", 
+    RowBox[{"[", "5", "]"}], "]"}], "-", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"alfa", "[", 
+      RowBox[{"[", "2", "]"}], "]"}], "+", 
+     RowBox[{"alfa", "[", 
+      RowBox[{"[", "4", "]"}], "]"}], "+", 
+     RowBox[{"alfa", "[", 
+      RowBox[{"[", "6", "]"}], "]"}]}], ")"}]}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Which", "[", 
+   RowBox[{
+    RowBox[{"And", "[", 
+     RowBox[{
+      RowBox[{"ConAB", ">", "0"}], ",", 
+      RowBox[{"ConAC", ">", "0"}]}], "]"}], ",", 
+    RowBox[{"Condorcet", "=", "1"}], ",", 
+    RowBox[{"And", "[", 
+     RowBox[{
+      RowBox[{"ConAB", "<", "0"}], ",", 
+      RowBox[{"ConBC", ">", "0"}]}], "]"}], ",", 
+    RowBox[{"Condorcet", "=", "2"}], ",", 
+    RowBox[{"And", "[", 
+     RowBox[{
+      RowBox[{"ConAC", "<", "0"}], ",", 
+      RowBox[{"ConBC", "<", "0"}]}], "]"}], ",", 
+    RowBox[{"Condorcet", "=", "3"}], ",", "True", ",", 
+    RowBox[{"Condorcet", "=", "0"}]}], "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Print", "[", "Condorcet", "]"}]}], "Input",
+ CellChangeTimes->{{3.6194253307329464`*^9, 3.61942544514149*^9}, {
+  3.619425476993312*^9, 3.6194256390575814`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"-", "1"}]], "Output",
+ CellChangeTimes->{{3.6194255908388233`*^9, 3.619425614988205*^9}}],
+
+Cell[BoxData[
+ RowBox[{"-", "5"}]], "Output",
+ CellChangeTimes->{{3.6194255908388233`*^9, 3.619425614990205*^9}}],
+
+Cell[BoxData["3"], "Output",
+ CellChangeTimes->{{3.6194255908388233`*^9, 3.6194256149912047`*^9}}],
+
+Cell[BoxData["2"], "Print",
+ CellChangeTimes->{{3.6194255908428235`*^9, 3.6194256149922047`*^9}}]
+}, Open  ]]
+},
+WindowSize->{707, 761},
+WindowMargins->{{96, Automatic}, {8, Automatic}},
+FrontEndVersion->"8.0 for Microsoft Windows (64-bit) (November 7, 2010)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 2535, 75, 152, "Input"],
+Cell[3117, 99, 113, 2, 30, "Output"],
+Cell[3233, 103, 113, 2, 30, "Output"],
+Cell[3349, 107, 98, 1, 30, "Output"],
+Cell[3450, 110, 97, 1, 23, "Print"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
